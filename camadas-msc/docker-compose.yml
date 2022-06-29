@@ -30,7 +30,7 @@ services:
     # na notação porta_de_fora:porta_de_dentro
     ports:
       # Expõe a porta padrão da aplicação: altere aqui caso use outra porta
-      - ${PORT}:${PORT}
+      -{PORT}:${PORT} $
     # Configura as variáveis de ambiente dentro do container
     environment:
       MYSQL_USER: ${MYSQL_USER}
